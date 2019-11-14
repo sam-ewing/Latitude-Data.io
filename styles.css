@@ -1,0 +1,147 @@
+/* Background color */
+.body { 
+    background-color: lightgrey;
+}
+
+/* NAVIGATION BAR */
+/* #################################################################################################### */
+
+    /* Nav-Brand Text Formatting */
+    #navbrand {
+        color: white; 
+        font-size: 25px; 
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+    
+    /* Nav Bar Background Color */
+    .navwrap {
+        background-color: maroon;
+    }
+
+    /* Nav Bar Mobile Menu Icon (Replaces text in smaller screen size) */
+    #mobile-menu-icon {
+        background-color: white;
+    }
+
+    /* Nav Bar text color */
+    #nav-link-text {
+        color: white;
+        padding: 10px;
+    }
+
+
+
+/* BODY CELL FORMATTING */
+/* #################################################################################################### */
+
+    /* Background Color of cells */
+    .cellback {
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    /* Page title formatting */
+    .title {
+        text-align: center;
+    }
+
+    /* Header formatting */
+    .header {
+        text-align: center;
+    }
+
+    /* Paragraph text formatting */
+    .sumtext {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+/* COMPARISON PAGE FORMATTING */
+/* #################################################################################################### */
+
+    /* Graph Title Link Formatting */
+    .comp-graphtitle-head {
+        text-align: center;
+    }
+
+    /* Graph Image Formatting */
+    .image-center-comp_2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 110%;
+        width: auto;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    /* Color of graph title links */
+    .link-color {
+        color:black;
+    }
+    
+/* VISUALIZATION BAR FORMATTING */
+/* #################################################################################################### */    
+
+    /* Graph centering and formatting */
+    .image-center-comp_top {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Graph centering and formatting WITH SELECTOR BORDER */
+    .image-center-comp_top_selector {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 4px solid maroon;
+    }
+
+
+    /* Home Page Visualization Menu image formatting */
+    .image-center-small {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 230%;
+        width: auto;
+        height: auto;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+
+/* DATA PAGE FORMATTING */
+/* #################################################################################################### */ 
+
+    /* Table Headers */
+    .table-heads {
+        background-color: maroon;
+        text-align: center;
+        color: white;
+    }
+
+    /* Padding between table and inner border of cell */
+    .padder {
+        padding:30px;
+    }
+
+    /* Center Back to top link */
+    .back-to-top-center {
+        text-align: center;
+    }

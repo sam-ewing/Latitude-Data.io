@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- Site setup, CSS link and Bootstrap links -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Humidity - Latitude Data - Homework 11 (HTML) </title>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type= "text/css" href="styles.css">
+
+</head>
+
+<!-- Body begins here -->
+
+  <body class="body">
+<!-- Navbar -->
+    <div class="navwrap">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" id="navbrand" href="index.html"><strong>Latitude Data</strong></a>
+          <button class="navbar-toggler" id="mobile-menu-icon" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" id ="nav-link-text" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id ="nav-link-text" href="Comparisons.html">Comparisons</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id ="nav-link-text" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Data
+                </a>
+  <!-- Data dropdown -->
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="RawData.html">Raw Data (Entire dataset including null values)</a>
+                      <a class="dropdown-item" href="RefinedData.html">Refined Data (Dataset with null values removed)</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id ="nav-link-text" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Visualizations
+                </a>
+  <!-- Visualization dropdown -->
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="MaxTemp.html">Plot 1 - Maximum Temperature</a>
+                      <a class="dropdown-item" href="Humidity.html">Plot 2 - Humidity <span class="sr-only">(current)</span></a>
+                      <a class="dropdown-item" href="Cloudiness.html">Plot 3 - Cloudiness</a>
+                      <a class="dropdown-item" href="WindSpeed.html">Plot 4 - Wind Speed</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+<!-- Spacing between navbar and title cell -->
+<br/>
+<br/>
+<!-- Title cell -->
+    <div class="container">
+      <div class="cellback">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <h1 class="title">Latitude and Humidity</h1>
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Spacing between Title cell and body cell -->
+<br/>
+<br/>
+   
+<!-- Body Cell -->
+    <div class="container">
+      <div class="cellback">
+        <br/>
+        <div class="row">
+            <div class="col-12 col-md-12">
+              <!-- Centered Media Display -->
+              <div class="media">
+                <!-- Image -->
+                  <img src="https://raw.githubusercontent.com/sam-ewing/HWK-11_Images/master/Latitude_vs_Humidity.png" class="align-self-center mr-3" alt="Latitude vs Humidity Graph">
+                  <div class="media-body">
+                    <!-- Summary and analysis -->
+                      <h3 class="mt-0">Plot Summary and Analysis</h3><hr/>
+                      <p class="sumtext">
+                          This scatter plot shows the recorded humidity for each of the cities sampled based on their latitude value. Cities with a negative latitude value are located in the southern hemisphere, while cities with a positive latitude value are located in the northern hemisphere (latitude 0 representing the equator).<br/><br/>
+                          While the data plotted in the Latitude vs. Humidity graph vary widely, there is a noticeable trend of higher levels of humidity the closer Latitude gets to the equator. This would suggest hot, tropical environments containing or beside large bodies of water (primarily oceans).<br/><br/>
+                          However, at the time of this analysis (November 11, 2019), it should be noted that high levels of humidity still exist for cities in the northern hemisphere. This may be due to a higher number of storm systems in this hemisphere as it enters the winter season.
+                      </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <br/>
+      </div>
+    </div>
+
+  <!-- Spacing between Body Cell and Visualization bar -->
+  <br/>
+  <br/>
+
+  <!-- Visualization Bar -->
+  <div class="container">
+    <div class="cellback">
+      <br/>
+        <div class="col-12">
+          <h4 class="header">Visualizations</h4>
+          <hr/>
+        </div>
+      <div class="row">
+        <!-- Max Temp -->
+        <div class="col-sm-3">
+          <a href="MaxTemp.html">
+            <img src="https://raw.githubusercontent.com/sam-ewing/HWK-11_Images/master/Latitude_vs_Max_Temp.png" class="image-center-comp_top" alt="Latitude vs Max Temp Graph">
+          </a>
+        </div>
+        <!-- Humidity -->
+        <div class="col-sm-3">
+          <a href="Humidity.html">
+            <img src="https://raw.githubusercontent.com/sam-ewing/HWK-11_Images/master/Latitude_vs_Humidity.png" class="image-center-comp_top_selector" alt="Latitude vs Humidity Graph">
+          </a>
+        </div>
+        <!-- Cloudiness -->
+        <div class="col-sm-3">
+          <a href="Cloudiness.html">
+            <img src="https://raw.githubusercontent.com/sam-ewing/HWK-11_Images/master/Latitude_vs_Cloudiness.png" class="image-center-comp_top" alt="Latitude vs Cloudiness Graph">
+          </a>
+        </div>
+        <!-- Wind Speed -->
+        <div class="col-sm-3">
+          <a href="WindSpeed.html">
+            <img src="https://raw.githubusercontent.com/sam-ewing/HWK-11_Images/master/Latitude_vs_Wind_Speed.png" class="image-center-comp_top" alt="Latitude vs Wind Speed Graph">
+          </a>
+        </div>
+      </div>
+      <br/>
+    </div>
+  </div>
+
+  <!-- Spacing between Visualization bar and bottom of page -->
+  <br/>
+  <br/>
+    </body>
+</html>
